@@ -8,8 +8,8 @@ import (
 func main() {
 	_, err := net.Dial("tcp", "scanme.nmap.org:80")
 	if err != nil {
-		fmt.Println("Port 80 is open")
+		fmt.Println("Port 80 is closed")
 	} else {
-		fmt.Println("Port 80 is not open")
+		fmt.Println("Port 80 is open")
 	}
 }
